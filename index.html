@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- template -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Himpunan Mahasisa Informatika Universitas Kristen Petra">
+    <meta name="keywords" content="Hima, Himainfra petra, IT petra, hima petra, informatika">
+    <meta name="author" content="Hima Infra">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>HIMAINFRA | Universitas Kristen Petra</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="assets/logo/logo-navbar.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>TTS Inbullz</title>
+    <!--Jquery-->
+    <script src="jquery-3.6.0.min.js"></script>
+    <!--w3school-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- javascript -->
+    <script src="script.js"></script>
+    
+</head>
+<style>
+.w3-animate-top {
+    position: fixed;
+    animation: animatetop 0.4s;
+}
+</style>
+<body style="background-color: #141414;">
+    <section class="header">
+    <div class="container">
+        <div id="title">
+            <h1 id="tts">TTS</h1>
+            <h1 class="highLight">INBULLZ</h1>
+        </div>
+        <div id=container-gambar-soal>
+        <div id="gambar-tts">
+            <img src="foto/gambar-tts2.png">
+        </div>
+        <div id="no-soal">
+            <p>Down:</p>
+            <div id="menurun">
+                <ul style="padding-left: 0px;">
+                    <li><button class="soal-1-t">1</button></li>
+                    <li><button class="soal-2-t">2</button></li>
+                    <li><button class="soal-3-t">3</button></li>
+                    <li><button class="soal-4-t">4</button></li>
+                    <li><button class="soal-5-t">5</button></li>
+                </ul>
+                <ul style="padding-left: 0px;">
+                    <li><button  class="soal-7-t">7</button></li>
+                    <li><button class="soal-8-t">8</button></li>
+                    <li><button  class="soal-9-t">9</button></li>
+                    <li><button  class="soal-10-t">10</button></li>
+                    <li><button  class="soal-11-t">11</button></li>
+                </ul>
+            </div>
+            <p>Across:</p>
+            <div id="mendatar">
+                <ul style="padding-left: 0px;">
+                    <li><button class="soal-6-d">6</button></li>
+                    <li><button class="soal-12-d">12</button></li>
+                    <li><button class="soal-13-d">13</button></li>
+                    <li><button class="soal-14-d">14</button></li>
+                    <li><button class="soal-15-d">15</button></li>
+                </ul>
+            </div>
+        </div>
+        </div> <!--end container jawaban dan soal -->
+        <div id="input-jawaban"> <!--form input jawaban-->
+            <form>
+                <div>
+                    <div id="input-menurun"> <!--Jawaban down-->
+                        <p class=judulInput>Down Answers:</p>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-1-t" placeholder="No. 1">
+                            <label for="no-1-t">nomor 1</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-2-t" placeholder="No. 2">
+                            <label for="no-2-t">nomor 2</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-3-t" placeholder="No. 3">
+                            <label for="no-3-t">nomor 3</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-4-t" placeholder="No. 4">
+                            <label for="no-4-t">nomor 4</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-5-t" placeholder="No. 5">
+                            <label for="no-5-t">nomor 5</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-7-t" placeholder="No. 7">
+                            <label for="no-7-t">nomor 7</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-8-t" placeholder="No. 8">
+                            <label for="no-8-t">nomor 8</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-9-t" placeholder="No. 9">
+                            <label for="no-9-t">nomor 9</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-10-t" placeholder="No. 10">
+                            <label for="no-10-t">nomor 10</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-11-t" placeholder="No. 11">
+                            <label for="no-11-t">nomor 11</label>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="input-mendatar"><!--Jawaban menurun-->
+                        <p class="judulInput">Across Answers :</p>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-6-d" placeholder="No. 6">
+                            <label for="no-6-d">nomor 6</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-12-d" placeholder="No. 12">
+                            <label for="no-12-d">nomor 12</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-13-d" placeholder="No. 13">
+                            <label for="no-13-d">nomor 13</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-14-d" placeholder="No. 14">
+                            <label for="no-14-d">nomor 14</label>
+                            <p></p>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="no-15-d" placeholder="No. 15">
+                            <label for="no-12-d">nomor 15</label>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="submit"><button type="button" id="submitInput"><div>Submit</div></button></div>
+            </form>
+        </div>
+        <!-- konfirmasi mau submit  -->
+        <div id="confirmBox">
+            <div class="message"></div>
+            <div>
+                <span class="yes">Yes</span>
+                <span class="no">No</span>
+            </div>
+        </div>
+        <!-- list soal menurun-->
+        <div class="pop-up soal-1-t hide" > <!--soal 1 down-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 1 - Down</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Layar yang dapat disentuh (Inggris)</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-2-t hide" > <!--soal 2 down-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 2 - Down</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Nama pelindung layar Z Fold 3</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-3-t hide" > <!--soal 3 down-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 3 - Down</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Otak dari sebuah perangkat komputer (Inggris)</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-4-t hide" > <!--soal 4 down-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 4 - Down</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Bulletinz yang sobat sedang baca</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-5-t hide" > <!--soal 5 down-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 5 - Down</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Cara mengakses Realita berbeda</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-7-t hide" > <!--soal 7 down-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 7 - Down</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Fakta yang bisa diolah untuk mendapatkan informasi</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-8-t hide" > <!--soal 8 down-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 8 - Down</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Selalu terkoneksi dengan internet dan sesama</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-9-t hide" > <!--soal 9 down-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 9 - Down</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Jenis bahan buatan Z Fold 3</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-10-t hide" > <!--soal 10 down-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 10 - Down</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Jenis handphone yang dapat dilipat</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-11-t hide" > <!--soal 11 down-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 11 - Down</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Alat inovasi yang terkenal di Jepang untuk membuat buang air menjadi nyaman</p>
+                </div>
+            </div> 
+        </div>
+        <!--list soal mendatar-->
+        <div class="pop-up soal-6-d hide"> <!--soal 6 across-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 6 - Across</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Nama teknologi dua layar milik ASUS</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-12-d hide"> <!--soal 12 across-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 12 - Across</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Bulat gepeng dan bersih-bersih</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-13-d hide"> <!--soal 13 across-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 13 - Across</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Pintar tetapi tidak hidup</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-14-d hide"> <!--soal 14 across-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 14 - Across</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Nama laptop yang dibuat oleh ASUS</p>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up soal-15-d hide"> <!--soal 15 across-->
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;"> 
+                <div class="wrapper">
+                    <div class="judul">
+                        <h10>Soal 15 - Across</h1>
+                    </div>
+                    <div class="silang-soal">
+                        <h10>x</h10>
+                    </div>
+                </div>
+                <div class="par-soal">
+                    <p>Penyebab Inbullz berbentuk virtual</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/ddb1639df8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- javascript -->
+    <script src="script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

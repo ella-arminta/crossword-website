@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap');
+
+:root {
+    --backgroundColor: #141414;
+    --secondaryBlack: #1B1B1B;
+    --fontGrey: #888888;
+    --primaryPink: #FF0266;
+    --primaryPurple: #9853F9;
+    --secondaryPink: #FF7597;
+    --secondaryPurple: #BC6FF1;
+    --purplePinkLinear: linear-gradient(10deg, #FF0266 ,#9853F9);
+    --Epilogue: 'Epilogue', sans-serif; /*judul*/
+    --Work: 'Work Sans', sans-serif;/*paragraf*/
+}
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: var(--Epilogue);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 12px;
+    width: 100vw;
+}
+.container h1{
+    text-align: center;
+    font-size: 59px;
+    padding: 10px;
+}
+#no-soal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:7px;
+}
+#mendatar{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0;
+    padding-left: 0;
+    width: 315px;
+}
+#no-soal p,#no-soal p{
+    display:flex;
+    margin-bottom: 3px;
+    color: white;
+    justify-content: flex-start;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left:0px;
+    margin-bottom: 0px;
+}
+#mendatar ul{
+    padding-top: 10px;
+}
+li{
+    font-size: 30px;
+    cursor: pointer;
+    margin:4px;
+}
+li button{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    /* warna 1 : */   
+    background: white;
+    color: var(--primaryPink);
+    /* warna 2 :  */
+    /* background:linear-gradient(10deg,var(--primaryPink),var(--primaryPurple)); 
+    color: white;
+    */
+    /* warna 3 */
+    /* background: var(--primaryPink);
+    color: white; */
+    /* end warna 3 */
+    /* warna 4 */
+    /* background: var(--secondaryPurple);
+    color: white; */
+    margin-right: 3px;
+    border-radius: 35px;
+}
+li button:hover{
+    text-decoration: underline;
+}
+#gambar-tts,img{
+    width: 400px;
+    height: 400px;
+}
+.pop-up{
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    width: 360px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    z-index: 99;
+}
+.w3-animate-top {
+    position: fixed;
+    animation: animatetop 0.4s;
+}
+.pop-up .wrapper{
+    background:linear-gradient(10deg,var(--secondaryPink),var(--secondaryPurple));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pop-up div.judul{
+    z-index: 99;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    align-items: flex-end;
+    /* background-color: var(--secondaryPink); */
+    /* background:linear-gradient(10deg,var(--secondaryPink),var(--secondaryPurple)); */
+}
+div.silang-soal{
+    font-size: 40px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: -10px;
+    cursor: pointer;
+    /* background:linear-gradient(10deg,var(--secondaryPink),var(--secondaryPurple)); */
+}
+.par-soal{
+    padding:20px;
+    color: var(--primaryPink);
+    width: 350px;
+    background-color:white;
+}
+.hide{
+    display:none;
+}
+.highLight{
+    background: -webkit-linear-gradient(10deg, #FF0266 ,#9853F9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--Work);
+    font-weight: bold;
+} 
+#input-jawaban{
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+form div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+.judulInput{
+    display: block;
+    margin-bottom: 10px;
+    color: var(--secondaryPink);
+    width: 512px;
+}
+form div div{
+    width: 250px;
+}
+form label{
+    color: var(--secondaryPink);
+}
+.form-control{
+    background-color: var(--backgroundColor);
+    color: white;
+}
+.form-control:focus{
+    background-color: var(--secondaryBlack);
+    color: white;
+    /* border-color: var(--secondaryPink);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--secondaryPink);
+    outline: 0 none; */
+    border-color: var(--secondaryPink);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--secondaryPink);
+}
+.form-floating p{
+    margin-bottom: 0px;
+    color: var(--primaryPink);
+}
+.hideAnswer{
+    display: none;
+}
+form button{
+    font-size: 18px;
+    background: var(--purplePinkLinear);
+    border-style: none;
+    padding: 2px;
+    font-family: var(--Epilogue);
+    border-radius: 50px;
+    width: 150px;
+}
+form button div{
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    justify-content: center;
+    font-family: var(--Work);
+    width: 146px;
+}
+#title{/*container dr "TTS" "inbullz"*/
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content: center;
+    }
+#title #tts,#title h1{
+    color: white;
+    font-family: var(--Work);
+    font-weight: bold;
+    width: fit-content;
+}
+/* komfirmasi submit form style */
+#confirmBox{
+    display: none;
+    background:var(--purplePinkLinear);
+    width:400px;
+    padding:12px; 
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+    top: 40vh;
+}
+#confirmBox span{
+    cursor: pointer;
+}
+img{
+    border: 12px solid var(--primaryPink);
+}
+
+/* ini tampilan kalo di ipad - laptop */
+@media(min-width:540px){ 
+    form div div{
+        width: 250px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    #input-menurun{
+        min-width: 512px;
+    }
+    #input-mendatar{
+        min-width: 512px;
+    }
+    form div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+    .submit{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .submit button div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    form button{
+        margin: 0 auto;
+    }
+    #gambar-tts, img {
+        width: 512px;
+        height: 512px;
+    }
+}
+/* ini tampilan kalo di hp */
+@media(max-width:415px){
+    body{
+        overflow-x: hidden;
+    }
+    .container #title h1{
+        font-size: 45px;
+        padding-right: 0px;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+    #gambar-tts,img,#container-gambar-soal{
+      width: 95vw;
+    }
+    #gambar-tts,img{
+        height: 98vw;
+    }
+    .pop-up{
+        width: 100vw;
+    }
+    .pop-up div{
+        width: 80vw;
+    }
+    div.silang-soal{
+        width: 70px;
+    }
+    #confirmBox{
+        width: 90vw;
+    }
+}
